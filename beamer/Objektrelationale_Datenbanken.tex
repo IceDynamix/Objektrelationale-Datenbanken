@@ -1,0 +1,24 @@
+\documentclass{beamer}
+\input{lib/preamble.tex}
+
+% DOCUMENT  --------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Inhaltsverzeichnis}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+% All sections go into the ./sections folder
+% Make sure to not include the .tex extension when including
+\include{sections/einführung}
+\include{sections/vergleich}
+\include{sections/beispiel}
+\include{sections/fazit}
+\include{sections/Quellen}
+
+% \include{sections/sources}
+\end{document}

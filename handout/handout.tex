@@ -1,0 +1,80 @@
+\documentclass[twocolumn]{article}
+
+\input{lib/preamble.tex}
+
+\begin{document}
+    \maketitle
+
+    \section{Definition}
+    Eine objektrelationale Datenbank ist eine Datenbank, welches auf einer relationalen Datenbank aufbaut, aber Elemente aus dem objektorientiertem Programmieren bzw. einer objektorientierter Datenbank einbindet. Dabei stehen Features, wie
+    komplexe Datentypen und Vererbung, im Vordergrund. Man könnte sagen, dass eine objektrelationale Datenbank von einer relationalen erbt. Insgesamt bilden folgende Konzepte den Grundbaustein für eine objektrelationale Datenbank:
+
+    \begin{itemize}
+        \item Aus einer relationalen Datenbank
+        \begin{itemize}
+            \item Tabellenartige Darstellung mit Reihen und Spalten
+            \item Primärschlüssel
+            \item Fremdschlüssel/Beziehungen zu anderen Tabellen
+        \end{itemize}
+        \item Aus einer objektorientierten Datenbank
+        \begin{itemize}
+            \item Komplexe Datentypen, wie Arrays oder Objekte
+            \item Vererbung
+        \end{itemize}
+    \end{itemize}
+
+    \section{Beispiele}
+    Eine relationale Datenbank kann keine komplexen Datentypen, wie Arrays oder Objekte einbinden. Eine int[] Spalte wäre also undenkbar. Aber ebenso auch eine Spalte mit selbst-definierten Objekten. Für beide müsste man separate Tabellen anlegen. Folgendes wäre zum Beispiel in einer objektrelationalen Datenbank möglich:
+
+    \begin{minted}{java}
+        public class Image {
+            public String path;
+            public Date dateCreated;
+            public Date dateModified;
+            // [sizeX, sizeY]
+            public int[] dimensions;
+            public int fileSize;
+        }
+    \end{minted}
+
+    \begin{table}[!htb]
+        \centering
+        \begin{adjustbox}{width=0.45\textwidth}
+            \small
+            \begin{tabular}[c]{|c|c|c|c|c|c}
+
+                \hline
+
+                \multicolumn{1}{|c|}{\textbf{id}} &
+                \multicolumn{1}{c|}{\textbf{name}} &
+                \multicolumn{1}{c|}{\textbf{vorname}} &
+                \multicolumn{1}{c|}{\textbf{alter}} &
+                \multicolumn{1}{c|}{\textbf{portrait}} &
+                \multicolumn{1}{c}{\dots} \\
+
+                \multicolumn{1}{|c|}{\textit{int}} &
+                \multicolumn{1}{c|}{\textit{String}} &
+                \multicolumn{1}{c|}{\textit{String}} &
+                \multicolumn{1}{c|}{\textit{int}} &
+                \multicolumn{1}{c|}{\textbf{Image}} &
+                \multicolumn{1}{c}{\dots} \\
+
+                \hline
+
+                0  & Mustermann  & Max    & 27             & <Instanz>      & \dots \\
+                1  & Mustermann  & Marie  & 26             & <Instanz>      & \dots \\
+                2  & Fröhlich    & Nico   & 18             & \textit{null}  & \dots \\
+                3  & Hammer      & Niko   & \textit{null}  & <Instanz>     & \dots \\
+                $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ &
+
+            \end{tabular}
+        \end{adjustbox}
+        \caption{Tabelle mit Objekten}
+        \label{tab:erwachseneMitBildern}
+    \end{table}
+
+    \section{Quellen}
+    \nocite{*}
+    \printbibliography
+
+\end{document}

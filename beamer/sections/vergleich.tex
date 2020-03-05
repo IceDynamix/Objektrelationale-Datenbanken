@@ -1,0 +1,84 @@
+\section{Vergleich}
+
+\begin{frame}
+    \frametitle{Relational vs. Objektrelational}
+    \pause
+    \begin{columns}[T,onlytextwidth]
+        \column{0.5\textwidth}
+            \textbf{Relational}
+            \pause
+            \begin{itemize}
+                \item Tabellarisch (in Reihen und Spalten) dargestellt \pause
+                \item Primärschlüssel \pause
+                \item Beziehungen zu anderen relationalen Datenbanken \pause
+                \item Grundlegende Datentypen \pause
+                \begin{itemize}
+                    \item int, float/double, byte \pause
+                    \item string, char \pause
+                    \item bool, null \pause
+                \end{itemize}
+            \end{itemize}
+
+        \column{0.5\textwidth}
+            \textbf{Objektrelational}
+            \pause
+            \begin{itemize}
+                \item Auch tabellarisch dargestellt
+                \item Alles was im Relationalen möglich ist \pause
+                \item Kann zusätzlich komplexere Datentypen nutzen \pause
+                \begin{itemize}
+                    \item Arrays (int[], string[] etc. \dots) \pause
+                    \item Objekte (selber definierte etc. \dots) \pause
+                    \item Objekte (selber definierte etc. \dots) \pause
+                \end{itemize}
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Objektorientiert vs. Objektrelational}
+    \pause
+    \begin{columns}[T,onlytextwidth]
+        \column{0.5\textwidth}
+            \textbf{Objektorientiert}
+            \pause
+            \begin{itemize}
+                \item In (Instanzen von) Objekten dargestellt, nicht Tabellen \pause
+                \item $\rightarrow$ hat ebenfalls komplexe Datentypen \pause
+                \item Geeignet für eine Codebase, welche auf OOP basiert \pause
+            \end{itemize}
+
+        \column{0.5\textwidth}
+            \textbf{Objektrelational}
+            \pause
+            \begin{itemize}
+                \item Tabellarisch
+                \item Ebenfalls komplexe Datentypen
+            \end{itemize}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Ähnlichkeit}
+
+    \begin{table}
+        \begin{small}
+            \label{tab:OODBvsORDB}
+            \begin{center}
+                \begin{tabular}[c]{|r|l|}
+                    \hline
+                    \multicolumn{1}{|c|}{\textbf{Objektorientiert}} &
+                    \multicolumn{1}{c|}{\textbf{(Objekt)relational}} \\
+                    \hline
+                    Klassen                   & Tabellen \\
+                    Instanzen (eines Objekts) & Reihen in einer Tabelle \\
+                    Attribute                 & Spalten \\
+                    Objektreferenzen          & Fremdschlüssel/Beziehungen \\
+                    \hline
+                \end{tabular}
+            \end{center}
+            \caption{Parallelen zwischen objektorientiert und objektrelational}
+        \end{small}
+    \end{table}
+
+\end{frame}
