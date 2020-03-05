@@ -4,6 +4,9 @@ object-relational databases
 
 german slideshow + handout for IT class i did in like 7h<sup>1</sup> total lmao
 
+- [slideshow pdf](https://github.com/IceDynamix/Objektrelationale-Datenbanken/blob/master/beamer/Objektrelationale_Datenbanken.pdf)
+- [handout pdf](https://github.com/IceDynamix/Objektrelationale-Datenbanken/blob/master/handout/handout.pdf)
+
 ---
 
 <sup>1</sup> how this happened:
