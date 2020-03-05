@@ -103,20 +103,20 @@
                 \multicolumn{1}{c|}{\textit{String}} &
                 \multicolumn{1}{c|}{\textit{String}} &
                 \multicolumn{1}{c|}{\textit{int}} &
-                \multicolumn{1}{c|}{\textbf{int[]?}} &
+                \multicolumn{1}{c|}{\alert{int[]?}} &
                 \multicolumn{1}{c}{\dots} \\
 
                 \hline
 
-                0  & Mustermann  & Max    & 27            & [0,1,2]?       & \dots \\
-                1  & Mustermann  & Marie  & 26            & [0]?           & \dots \\
-                2  & Fröhlich    & Nico   & 18            & \textit{null}  & \dots \\
-                3  & Hammer      & Niko   & \textit{null} & [3]            & \dots \\
+                0  & Mustermann  & Max    & 27            & \alert{[0,1,2]?}  & \dots \\
+                1  & Mustermann  & Marie  & 26            & \alert{[0]?}      & \dots \\
+                2  & Fröhlich    & Nico   & 18            & \textit{null}     & \dots \\
+                3  & Hammer      & Niko   & \textit{null} & \alert{[3]?}       & \dots \\
                 $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ &
 
             \end{tabular}
         \end{adjustbox}
-        \caption{Theoretischer Datensatz \say{Erwachsene} als relationale Datenbank}
+        \caption{Datensatz \say{Erwachsene} als objektrelationale Datenbank}
         \label{tab:erwachsene2}
     \end{table}
 
@@ -158,15 +158,15 @@
                 \multicolumn{1}{c|}{\textit{String}} &
                 \multicolumn{1}{c|}{\textit{String}} &
                 \multicolumn{1}{c|}{\textit{int}} &
-                \multicolumn{1}{c|}{\textbf{Image}} &
+                \multicolumn{1}{c|}{\alert{Image}} &
                 \multicolumn{1}{c}{\dots} \\
 
                 \hline
 
-                0  & Mustermann  & Max    & 27             & <Instanz>      & \dots \\
-                1  & Mustermann  & Marie  & 26             & <Instanz>      & \dots \\
+                0  & Mustermann  & Max    & 27             & \alert{<Instanz>}      & \dots \\
+                1  & Mustermann  & Marie  & 26             & \alert{<Instanz>}      & \dots \\
                 2  & Fröhlich    & Nico   & 18             & \textit{null}  & \dots \\
-                3  & Hammer      & Niko   & \textit{null}  & <Instanz>     & \dots \\
+                3  & Hammer      & Niko   & \textit{null}  & \alert{<Instanz>}     & \dots \\
                 $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ &
 
             \end{tabular}

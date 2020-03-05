@@ -2,60 +2,39 @@
 
 \begin{frame}
     \frametitle{Relational vs. Objektrelational}
-    \pause
-    \begin{columns}[T,onlytextwidth]
-        \column{0.5\textwidth}
-            \textbf{Relational}
-            \pause
-            \begin{itemize}
-                \item Tabellarisch (in Reihen und Spalten) dargestellt \pause
-                \item Primärschlüssel \pause
-                \item Beziehungen zu anderen relationalen Datenbanken \pause
-                \item Grundlegende Datentypen \pause
-                \begin{itemize}
-                    \item int, float/double, byte \pause
-                    \item string, char \pause
-                    \item bool, null \pause
-                \end{itemize}
-            \end{itemize}
 
-        \column{0.5\textwidth}
-            \textbf{Objektrelational}
-            \pause
+        \textbf{Relational}
+        \pause
+        \begin{itemize}
+            \item \alert{Tabellarisch} (in Reihen und Spalten) dargestellt \pause
             \begin{itemize}
-                \item Auch tabellarisch dargestellt
-                \item Alles was im Relationalen möglich ist \pause
-                \item Kann zusätzlich komplexere Datentypen nutzen \pause
-                \begin{itemize}
-                    \item Arrays (int[], string[] etc. \dots) \pause
-                    \item Objekte (selber definierte etc. \dots) \pause
-                    \item Objekte (selber definierte etc. \dots) \pause
-                \end{itemize}
+                \item Reihen repräsentieren Datensätze
+                \item Spalten repräsentieren Attribute
             \end{itemize}
-    \end{columns}
+            \pause
+            \item Primärschlüssel \pause
+            \item Beziehungen zu anderen relationalen Datenbanken (Fremdschlüssel) \pause
+            \item Grundlegende Datentypen \pause
+            \begin{itemize}
+                \item int, float/double, byte \pause
+                \item string, char \pause
+                \item bool, null \pause
+            \end{itemize}
+        \end{itemize}
+
 \end{frame}
 
 \begin{frame}
     \frametitle{Objektorientiert vs. Objektrelational}
-    \pause
-    \begin{columns}[T,onlytextwidth]
-        \column{0.5\textwidth}
-            \textbf{Objektorientiert}
-            \pause
-            \begin{itemize}
-                \item In (Instanzen von) Objekten dargestellt, nicht Tabellen \pause
-                \item $\rightarrow$ hat ebenfalls komplexe Datentypen \pause
-                \item Geeignet für eine Codebase, welche auf OOP basiert \pause
-            \end{itemize}
 
-        \column{0.5\textwidth}
-            \textbf{Objektrelational}
-            \pause
-            \begin{itemize}
-                \item Tabellarisch
-                \item Ebenfalls komplexe Datentypen
-            \end{itemize}
-    \end{columns}
+    \textbf{Objektorientiert}
+    \pause
+    \begin{itemize}
+        \item In (Instanzen von) \alert{Objekten} dargestellt, nicht Tabellen \pause
+        \item $\rightarrow$ hat ebenfalls \alert{komplexe Datentypen} \pause
+        \item Geeignet für eine Codebase, welche auf OOP basiert \pause
+    \end{itemize}
+
 \end{frame}
 
 \begin{frame}
