@@ -1,5 +1,7 @@
 # Objektrelationale Datenbanken
 
+graded 14/15 points
+
 object-relational databases
 
 german slideshow + handout for IT class i did in like 7h<sup>1</sup> total lmao
